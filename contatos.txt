@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 João do P
+=======
+João
+>>>>>>> main
 11955555555
 joaopedefeijao@ook.com
