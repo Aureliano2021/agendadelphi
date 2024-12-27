@@ -1,0 +1,173 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Agenda de Contatos'
+  ClientHeight = 360
+  ClientWidth = 586
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -16
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  OnCreate = FormCreate
+  DesignSize = (
+    586
+    360)
+  TextHeight = 21
+  object Label1: TLabel
+    Left = 8
+    Top = 51
+    Width = 46
+    Height = 21
+    Caption = 'Nome:'
+  end
+  object Label2: TLabel
+    Left = 8
+    Top = 91
+    Width = 60
+    Height = 21
+    Caption = 'Telefone:'
+  end
+  object Label3: TLabel
+    Left = 207
+    Top = 91
+    Width = 47
+    Height = 21
+    Caption = 'E-mail:'
+  end
+  object Label4: TLabel
+    Left = 8
+    Top = 181
+    Width = 69
+    Height = 21
+    Caption = 'Selecione:'
+  end
+  object Label5: TLabel
+    Left = 8
+    Top = 272
+    Width = 46
+    Height = 21
+    Caption = 'Nome:'
+  end
+  object Label6: TLabel
+    Left = 8
+    Top = 299
+    Width = 60
+    Height = 21
+    Caption = 'Telefone:'
+  end
+  object Label7: TLabel
+    Left = 8
+    Top = 326
+    Width = 44
+    Height = 21
+    Caption = 'E-mail'
+  end
+  object Label8: TLabel
+    Left = 74
+    Top = 272
+    Width = 4
+    Height = 21
+  end
+  object Label9: TLabel
+    Left = 74
+    Top = 299
+    Width = 4
+    Height = 21
+  end
+  object Label10: TLabel
+    Left = 74
+    Top = 326
+    Width = 4
+    Height = 21
+  end
+  object Label11: TLabel
+    Left = 0
+    Top = 0
+    Width = 586
+    Height = 37
+    Align = alTop
+    Alignment = taCenter
+    Caption = 'Agenda de Contatos'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+    ExplicitLeft = 164
+    ExplicitTop = 5
+    ExplicitWidth = 261
+  end
+  object ListBox1: TListBox
+    Left = 8
+    Top = 208
+    Width = 571
+    Height = 49
+    AutoComplete = False
+    Anchors = [akLeft, akTop, akRight]
+    ItemHeight = 21
+    TabOrder = 0
+    OnDblClick = ListBox1DblClick
+  end
+  object edt_Nome: TEdit
+    Left = 74
+    Top = 48
+    Width = 504
+    Height = 29
+    Anchors = [akLeft, akTop, akRight]
+    TabOrder = 1
+    OnExit = edt_NomeExit
+  end
+  object medt_telefone: TMaskEdit
+    Left = 74
+    Top = 88
+    Width = 119
+    Height = 29
+    EditMask = '!\(99\)00000-0000;0; '
+    MaxLength = 14
+    TabOrder = 2
+    Text = ''
+  end
+  object medt_email: TMaskEdit
+    Left = 260
+    Top = 88
+    Width = 318
+    Height = 29
+    Anchors = [akLeft, akTop, akRight]
+    TabOrder = 3
+    Text = ''
+    OnExit = medt_emailExit
+  end
+  object btn_salvar: TButton
+    Left = 476
+    Top = 123
+    Width = 102
+    Height = 55
+    Anchors = [akTop, akRight]
+    Caption = 'Salvar'
+    TabOrder = 4
+    OnClick = btn_salvarClick
+  end
+  object btn_Delete: TButton
+    Left = 368
+    Top = 123
+    Width = 102
+    Height = 55
+    Anchors = [akTop, akRight]
+    Caption = 'Deletar'
+    TabOrder = 5
+    OnClick = btn_DeleteClick
+  end
+  object btn_Editar: TButton
+    Left = 260
+    Top = 123
+    Width = 102
+    Height = 55
+    Anchors = [akTop, akRight]
+    Caption = 'Editar'
+    TabOrder = 6
+    OnClick = btn_EditarClick
+  end
+end

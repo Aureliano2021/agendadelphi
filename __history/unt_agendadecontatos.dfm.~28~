@@ -1,0 +1,145 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 319
+  ClientWidth = 510
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -16
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  OnCreate = FormCreate
+  TextHeight = 21
+  object Label1: TLabel
+    Left = 8
+    Top = 27
+    Width = 46
+    Height = 21
+    Caption = 'Nome:'
+  end
+  object Label2: TLabel
+    Left = 8
+    Top = 67
+    Width = 60
+    Height = 21
+    Caption = 'Telefone:'
+  end
+  object Label3: TLabel
+    Left = 207
+    Top = 67
+    Width = 47
+    Height = 21
+    Caption = 'E-mail:'
+  end
+  object Label4: TLabel
+    Left = 8
+    Top = 157
+    Width = 69
+    Height = 21
+    Caption = 'Selecione:'
+  end
+  object Label5: TLabel
+    Left = 8
+    Top = 232
+    Width = 46
+    Height = 21
+    Caption = 'Nome:'
+  end
+  object Label6: TLabel
+    Left = 8
+    Top = 259
+    Width = 60
+    Height = 21
+    Caption = 'Telefone:'
+  end
+  object Label7: TLabel
+    Left = 8
+    Top = 286
+    Width = 44
+    Height = 21
+    Caption = 'E-mail'
+  end
+  object Label8: TLabel
+    Left = 74
+    Top = 232
+    Width = 4
+    Height = 21
+  end
+  object Label9: TLabel
+    Left = 74
+    Top = 259
+    Width = 4
+    Height = 21
+  end
+  object Label10: TLabel
+    Left = 74
+    Top = 286
+    Width = 4
+    Height = 21
+  end
+  object ListBox1: TListBox
+    Left = 8
+    Top = 184
+    Width = 494
+    Height = 33
+    ItemHeight = 21
+    TabOrder = 0
+    OnDblClick = ListBox1DblClick
+  end
+  object edt_Nome: TEdit
+    Left = 74
+    Top = 24
+    Width = 428
+    Height = 29
+    TabOrder = 1
+    OnExit = edt_NomeExit
+  end
+  object medt_telefone: TMaskEdit
+    Left = 74
+    Top = 64
+    Width = 119
+    Height = 29
+    EditMask = '!\(99\)00000-0000;0; '
+    MaxLength = 14
+    TabOrder = 2
+    Text = ''
+  end
+  object medt_email: TMaskEdit
+    Left = 260
+    Top = 64
+    Width = 242
+    Height = 29
+    TabOrder = 3
+    Text = ''
+    OnExit = medt_emailExit
+  end
+  object btn_salvar: TButton
+    Left = 400
+    Top = 99
+    Width = 102
+    Height = 55
+    Caption = 'Salvar'
+    TabOrder = 4
+    OnClick = btn_salvarClick
+  end
+  object btn_Delete: TButton
+    Left = 292
+    Top = 99
+    Width = 102
+    Height = 55
+    Caption = 'Deletar'
+    TabOrder = 5
+    OnClick = btn_DeleteClick
+  end
+  object btn_Editar: TButton
+    Left = 184
+    Top = 99
+    Width = 102
+    Height = 55
+    Caption = 'Editar'
+    TabOrder = 6
+    OnClick = btn_EditarClick
+  end
+end

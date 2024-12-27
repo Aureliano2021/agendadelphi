@@ -1,0 +1,37 @@
+unit unt_validacaoemail;
+
+interface
+
+uses
+
+System.RegularExpressions, System.SysUtils, Vcl.Mask;
+
+type
+  TValidaEmail = class
+    private
+    FEmail: TMaskEdit;
+    FRegEx : TRegEx;
+    public
+      function ValidaEmailRegex(Value:TMaskEdit) : Boolean;
+      property Email: TMaskEdit read FEmail write FEmail;
+      end;
+
+
+implementation
+
+{ TValidaEmail }
+
+function TValidaEmail.ValidaEmailRegex(Value:TMaskEdit): Boolean;
+begin
+  FEmail :=  Value;
+  FRegEx := TRegEx.Create('^[\w\.-]+@[\w\.-]+\.\w+$');
+
+  if not FRegEx.IsMatch(FEmail.ToString) then
+  begin
+     Result := false;
+  end
+  else
+    Result := true;
+end;
+
+end.

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/12/04 17:36:04.000.749,=C:\Users\Congregação Jucati\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/12/04 17:47:41.000.845,C:\Users\Congregação Jucati\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\Congregação Jucati\Documents\Embarcadero\Studio\Projects\Agenda\unt_agendadecontatos.dfm</Transaction>
+    <Transaction>2024/12/04 17:47:41.000.845,C:\Users\Congregação Jucati\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\Congregação Jucati\Documents\Embarcadero\Studio\Projects\Agenda\unt_agendadecontatos.pas</Transaction>
+    <Transaction>2024/12/04 17:47:49.000.386,C:\Users\Congregação Jucati\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\Congregação Jucati\Documents\Embarcadero\Studio\Projects\Agenda\prj_contatos.dproj</Transaction>
+    <Transaction>2024/12/09 20:17:56.000.526,=C:\Users\Congregação Jucati\Documents\Embarcadero\Studio\Projects\Agenda\Unit1.pas</Transaction>
+    <Transaction>2024/12/09 20:18:10.000.716,C:\Users\Congregação Jucati\Documents\Embarcadero\Studio\Projects\Agenda\unt_validacaoemail.pas=C:\Users\Congregação Jucati\Documents\Embarcadero\Studio\Projects\Agenda\Unit1.pas</Transaction>
+    <Transaction>2024/12/11 09:31:42.000.725,=C:\Users\Congregação Jucati\Documents\Embarcadero\Studio\Projects\Agenda\Unit2.pas</Transaction>
+    <Transaction>2024/12/11 09:32:21.000.417,C:\Users\Congregação Jucati\Documents\Embarcadero\Studio\Projects\Agenda\Unit2.dfm=C:\Users\Congregação Jucati\Documents\Embarcadero\Studio\Projects\Agenda\unt_editarcontato.dfm</Transaction>
+    <Transaction>2024/12/11 09:32:21.000.417,C:\Users\Congregação Jucati\Documents\Embarcadero\Studio\Projects\Agenda\Unit2.pas=C:\Users\Congregação Jucati\Documents\Embarcadero\Studio\Projects\Agenda\unt_editarcontato.pas</Transaction>
+  </Transactions>
+</BorlandProject>

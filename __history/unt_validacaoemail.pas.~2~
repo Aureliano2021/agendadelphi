@@ -1,0 +1,35 @@
+unit unt_validacaoemail;
+
+interface
+
+uses
+
+System.RegularExpressions, unt_agendadecontatos, System.SysUtils;
+
+type
+  TValidaEmail = class
+    private
+    FEmail: String;
+    FRegEx : TRegEx;
+    public
+      procedure ValidaEmailRegex;
+      property Email: String read FEmail write FEmail;
+      end;
+
+
+implementation
+
+{ TValidaEmail }
+
+procedure TValidaEmail.ValidaEmailRegex;
+begin
+  FEmail :=  unt_agendadecontatos.Form1.MaskEdit2.ToString;
+  FRegEx := TRegEx.Create('^[\w\.-]+@[\w\.-]+\.\w+$');
+
+  if not FRegEx.IsMatch(FEmail) then
+  begin
+    ShowMessage('E-mail inválido! Por favor, insira um e-mail no formato correto.');
+    unt_agendadecontatos.Form1.MaskEdit2.SetFocus;
+end;
+
+end.
